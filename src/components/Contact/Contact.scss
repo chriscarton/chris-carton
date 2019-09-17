@@ -1,0 +1,36 @@
+@import '../../variables.scss';
+
+#Contact{
+    min-height: 100vh;
+    background-color:$dark;
+    display:grid;
+    align-content: center;
+    justify-content: center;
+    h2{
+        color:white;
+        text-align: center;
+        font-family: 'bebas';
+    }
+    form{
+        width:75vw;
+        border:1px dashed white;
+        > div{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap:30px;
+        }
+        input{
+            padding:3px;
+            display:block;
+            min-height:35px;
+            width:100%;
+            margin-top:15px;
+            margin-bottom:15px;
+            background-color:white;
+        }
+        textarea{
+            width:100%;
+            min-height:300px;
+        }
+    }
+}

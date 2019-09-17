@@ -1,9 +1,62 @@
 @import '../../variables.scss';
 
-//hmm...
-//Mobile First ?
-
 #Home{
     min-height:100vh;
-    border:1px solid black;
+    background-image:url('../../assets/img/cover.jpg');
+    background-size:cover;
+    background-position:35% center;
+    background-attachment: fixed;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Card{
+    margin:15px;
+    padding:5px;
+    background-image:url('../../assets/img/kraft.jpg');
+    display:grid;
+    align-content:center;
+    justify-content: center;
+    text-align: center;
+    
+    transform-origin: bottom left;
+    transform:rotate(-25deg);
+    opacity:0;
+
+    animation-name:animCard;
+    animation-delay:1s;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+
+    @keyframes animCard{
+        from{
+            opacity:0;
+            transform:rotate(-25deg);
+        }
+        to{
+            opacity:1;
+            transform:rotate(0deg);
+        }
+    }
+
+    h1{
+        color:$dark;
+        margin:0px;
+        margin-top:40px;
+        font-family: 'bebas';
+        font-size:35px;
+    }
+    h2{
+        font-size:16px;
+        background-color:$dark;
+        color:white;
+        transform:rotate(-3deg);
+        padding:1px;
+    }
+    .btn{
+        color:$dark;
+        font-size:20px;
+    }
+
 }
