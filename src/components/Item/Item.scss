@@ -1,0 +1,72 @@
+@import '../../variables.scss';
+
+
+
+.item{
+    width:450px;
+    height:450px;
+    padding:50px;
+    background-color:rgb(235, 235, 235);
+    position:relative;
+    .title,div{
+        position:relative;
+        z-index: 2;
+    }
+    .title{
+        font-family: 'roboto';
+        font-size: 65px;
+        line-height: 65px;
+        font-size:100px !important;
+        span{
+            font-size:110px;
+            font-family: 'robotoblack';
+            color:white;
+            text-shadow:5px 5px 0px rgba(0,0,0,0.25);
+        }
+        .text{
+
+        }
+    }
+    img{
+        display:block;
+        position:absolute;        
+        z-index:0;
+    }
+    
+}
+
+.item:nth-child(3){
+    .title{
+        transform:translate(-75px,-75px);
+        font-size:65px !important;
+        line-height: 65px !important;
+        span{
+            white-space: nowrap;
+        }
+    }
+}
+
+.item:nth-child(4){
+    .title{
+        transform:translate(-75px,0px);
+        font-size:65px !important;
+        line-height: 65px !important;
+        span{
+            white-space: nowrap;
+            font-size:90px;
+        }
+    }
+}
+
+.item:nth-child(5){
+    .title{
+        transform:translate(145px,-75px);
+        
+        span{
+            white-space: nowrap;
+            position:relative;
+            z-index:2;
+            font-size:125px;
+        }
+    }
+}

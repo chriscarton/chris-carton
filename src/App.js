@@ -3,7 +3,7 @@ import React from 'react';
 import './App.scss';
 import './assets/font-awesome-4.7.0/css/font-awesome.min.css';
 import Contact from './components/Contact/Contact.js';
-import Test from './components/Test/Test.js';
+import Offre from './components/Offre/Offre.js';
 import About from './components/About/About.js';
 import Footer from './components/Footer/Footer.js';
 
@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Home/>
-      <Test/>
+      <Offre/>
       <Contact/>
       <About/>
       <Footer/>

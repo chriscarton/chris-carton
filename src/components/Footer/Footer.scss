@@ -1,5 +1,28 @@
 @import '../../variables.scss';
 #Footer{
-    min-height:250px;
     border:1px dashed black;
+    #Quote{
+        background-color:lighten($dark,10%);
+        color:white;
+        padding-top:50px;
+        padding-bottom:50px;
+        .content{
+            width:75%;
+            margin-left:auto;
+            margin-right:auto;
+            cite{
+                display:block;
+                text-align: right;
+            }
+        }
+    }
+    #End{
+        background-color:$dark;
+        color:white;
+        padding:5px;
+        text-align: center;
+        a{
+            color:$blue;
+        }
+    }
 }
