@@ -10,6 +10,39 @@ import sur_mesure from './img/sur-mesure.jpg';
 
 
 export class Offre extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            items:[
+                {
+                    id:1,
+                    name:"Un design unique.",
+                    img:design,
+                    text:"Un blabla ici."
+                },
+                {
+                    id:2,
+                    name:"Des fonctionnalités sur-mesure.",
+                    img:sur_mesure,
+                    text:"Un autre blabla ici."
+                },
+                {
+                    id:3,
+                    name:"Des technologies de pointe",
+                    img:technologies,
+                    text:"Toujours du blabla"
+                },
+                {
+                    id:4,
+                    name:"100% mobile",
+                    img:mobile,
+                    text:"Et encore du blabla"
+                }
+            ]
+        }
+    }
+
     render() {
         return (
             <div id="Content">
@@ -17,10 +50,18 @@ export class Offre extends Component {
                     Conception et réalisation de votre site internet.
                 </h1>
                 <div className="grid">
+
                     <div className="intro">
                         Je vous propose la création de votre site internet de A à Z. C'est une offre complète et unique qui inclut le design graphique, l'intégration, le développement et la mise en ligne. 
                     </div>
 
+                    {this.state.items.map((item)=>(
+                        <Item key={item.id} item={item}>
+                            <h2 className="title">{item.name}</h2>
+                        </Item>
+                    ))}
+
+                    {/* 
                     <Item
                         name={<h2 className="title">Un design <span>unique</span>.</h2>}
                         translateX={500}
@@ -59,11 +100,11 @@ export class Offre extends Component {
                     
                     
                         
-                        {/* <div className="info">
+                        <div className="info">
                             <p>Le saviez-vous ? </p>
                             <p>30% des connexions à votre site web passent par le mobile. Votre site ne doit donc plus être capable de s'adapter à eux, il doit être conçu pour eux.</p>
-                        </div> */}
-                   
+                        </div> 
+                   */}
                 </div>
             </div>
         )

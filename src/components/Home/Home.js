@@ -11,7 +11,7 @@ export class Home extends Component {
 						Création de sites internet, à Lille
 					</h2>
 					<a href="#Offres" className="btn">
-						<i class="fa fa-arrow-circle-down"></i>
+						<i id="scrollToOffres" className="fa fa-arrow-circle-down"></i>
 					</a>
 				</div>
 			</div>

@@ -45,7 +45,7 @@ export class About extends Component {
                     >
                         <img src={this.state.image} alt="" id="Portrait"/>
                     </div>
-                    <h3 class="title">Chris Carton</h3>
+                    <h3 className="title">Chris Carton</h3>
                     <div className="text">
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, illum! Alias totam dolorum aspernatur reprehenderit tempora suscipit aut facilis quo libero quaerat!

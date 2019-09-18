@@ -4,23 +4,24 @@ import './Item.scss';
 export class Item extends Component {
     render() {
 
+        let item = this.props.item;
+        
         return (
-            <div class="item">
-                {this.props.name}
-                <div>
-                    {this.props.text}
+            <div 
+                className="item"
+                data-sal-duration="1000"
+                data-sal="slide-up"
+                data-sal-delay={150*item.id}
+                data-sal-easing="ease-out-bounce"
+            >
+                {this.props.children}
+                <div className="text">
+                    {item.text}
                 </div>
                 <img 
-                    src={this.props.img} 
-                    alt={this.props.alt} 
-                    style={{
-                        left:this.props.left,
-                        top: this.props.top,
-                        right: this.props.right,
-                        bottom: this.props.bottom,
-                        width: this.props.width,
-                        height: this.props.height
-                    }}/>
+                    src={item.img} 
+                    alt={item.alt} 
+                />
             </div>
         )
     }
