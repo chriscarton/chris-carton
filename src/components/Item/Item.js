@@ -10,7 +10,7 @@ export class Item extends Component {
             <div 
                 className="item"
                 data-sal-duration="1000"
-                data-sal="slide-up"
+                data-sal="slide-down"
                 data-sal-delay={150*item.id}
                 data-sal-easing="ease-out-bounce"
             >
